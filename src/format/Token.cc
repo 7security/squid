@@ -145,6 +145,7 @@ static TokenTableEntry TokenTableMisc[] = {
     {"err_detail", LFT_SQUID_ERROR_DETAIL },
     {"note", LFT_NOTE },
     {"credentials", LFT_CREDENTIALS},
+    {"dcp_auth", LFT_DCP_AUTH},
     {NULL, LFT_NONE}        /* this must be last */
 };
 

@@ -16,6 +16,6 @@
 #define DCP_PLATFORM "win"
 #define DCP_AUTH_VALUE "ac4500dd3b7579186c1b0620614fdb1f7d61f944"
 
-void dcp_auth_calulate(String &);
+void dcp_auth_calculate(String &);
 
 #endif /* _SQUID_DCP_AUTH_H */
