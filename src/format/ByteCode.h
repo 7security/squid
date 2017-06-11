@@ -209,6 +209,7 @@ typedef enum {
     LFT_ICAP_STATUS_CODE,
 #endif
     LFT_CREDENTIALS,
+    LFT_DCP_AUTH,
 
 #if USE_OPENSSL
     LFT_SSL_BUMP_MODE,

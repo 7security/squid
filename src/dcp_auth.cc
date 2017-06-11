@@ -13,7 +13,7 @@
 
 // Chrome-Proxy: ps=1439961190-0-0-0, sid=9fb96126616582c4be88ab7fe26ef593, b=2214, p=115, c=win
 
-void dcp_auth_calulate(String &sb) {
+void dcp_auth_calculate(String &sb) {
 	HASH md5bin;
 	HASHHEX md5hex;
 	char ts_buf[16], auth_buf[64], buf[128];

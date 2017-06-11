@@ -27,6 +27,7 @@
 #include "ssl/ErrorDetail.h"
 #include "ssl/ServerBump.h"
 #endif
+#include "dcp_auth.h"
 
 /// Convert a string to NULL pointer if it is ""
 #define strOrNull(s) ((s)==NULL||(s)[0]=='\0'?NULL:(s))
@@ -1207,6 +1208,11 @@ Format::Format::assemble(MemBuf &mb, const AccessLogEntry::Pointer &al, int logS
 #endif
 
             break;
+	
+	case LFT_DCP_AUTH:
+	    dcp_auth_calculate(sb);
+	    out = sb.termedBuf();
+	    break;
 
         case LFT_PERCENT:
             out = "%";
